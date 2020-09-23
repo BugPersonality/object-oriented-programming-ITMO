@@ -40,6 +40,17 @@ namespace OOPLab_1
             Console.WriteLine($"{data.TryGetDouble("LEGACY_XML", "asd")}\n");
             Console.WriteLine($"{data.TryGetString("asd", "ADC_DEV")}\n");
         }
+
+        public void show_map()
+        {
+            foreach (KeyValuePair<string, Dictionary<string, string>> keyValue in data.map )
+            {
+                foreach (KeyValuePair<string, string> keyValuePair in keyValue.Value)
+                {
+                    Console.WriteLine(keyValue.Key + " " + keyValuePair.Key + " " + keyValuePair.Value);
+                }
+            }
+        }
         
     }
 }

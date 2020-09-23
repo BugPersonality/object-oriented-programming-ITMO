@@ -58,7 +58,7 @@ namespace OOPLab_1
             }
             else
             {
-               Console.WriteLine("can't open file");
+               Console.WriteLine("File format Exception");
                Environment.Exit(0);
             }
         }

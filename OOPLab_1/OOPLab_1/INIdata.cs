@@ -33,7 +33,7 @@ namespace OOPLab_1
             {
                 if (!map.ContainsKey(section) || !map[section].ContainsKey(name))
                 {
-                    throw new Exception("name or section does not exist");
+                    throw new Exception("name or section doesn't exist");
                 }
                 if (!Int32.TryParse(map[section][name], out int n))
                 {
@@ -56,7 +56,7 @@ namespace OOPLab_1
             {
                 if (!map.ContainsKey(section) || !map[section].ContainsKey(name))
                 {
-                    throw new Exception("name or section does not exist");
+                    throw new Exception("name or section doesn't exist");
                 }
                 if (!Double.TryParse(map[section][name], out double n))
                 {
@@ -83,7 +83,7 @@ namespace OOPLab_1
             {
                 if (!map.ContainsKey(section) || !map[section].ContainsKey(name))
                 {
-                    throw new Exception("name or section does not exist");
+                    throw new Exception("name or section doesn't exist");
                 }
                 if (Double.TryParse(map[section][name], out double n))
                 {
