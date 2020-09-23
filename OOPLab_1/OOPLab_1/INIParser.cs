@@ -1,9 +1,7 @@
 ﻿using System.IO;
 using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Linq;
-
 
 namespace OOPLab_1
 {

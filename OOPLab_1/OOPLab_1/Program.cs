@@ -1,4 +1,8 @@
-﻿using System;
+﻿using System.IO;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using static OOPLab_1.INIParser2_0;
 
 namespace OOPLab_1
 {
@@ -8,34 +12,21 @@ namespace OOPLab_1
         {
             string path = "C:/Rider_Projects/OOPLab_1/OOPLab_1/test.ini";
             
-            INIdata data = new INIdata(path);
+            /*INIParser2_0 parser = new INIParser2_0();
 
-            string command = "";
+            INIdata data = parser.Parse_file(path);
 
-            while (command != "stop")
+            foreach (KeyValuePair<string, Dictionary<string, string>> keyValue in data.map )
             {
-                Console.Write("Enter the command: ");
-                command = Console.ReadLine();
-
-                if (command == "GetInt")
+                foreach (KeyValuePair<string, string> keyValuePair in keyValue.Value)
                 {
-                    int result = data.TryGetInt(Console.ReadLine(), Console.ReadLine());
-                    
-                    Console.WriteLine($"Result: {result}");
+                    Console.WriteLine(keyValue.Key + " " + keyValuePair.Key + " " + keyValuePair.Value);
                 }
-                else if (command == "GetDb")
-                {
-                    double result = data.TryGetDouble(Console.ReadLine(), Console.ReadLine());
-                    
-                    Console.WriteLine($"Result: {result}");
-                }
-                else if (command == "GetStr")
-                {
-                    string result = data.TryGetString(Console.ReadLine(), Console.ReadLine());
-                    
-                    Console.WriteLine($"Result: {result}");
-                }
-            }
+            }*/
+            
+            Validator validator = new Validator(path);
+            validator.CheckTryGetType();
+            validator.CheckExceptions();
         }
     }
 }
