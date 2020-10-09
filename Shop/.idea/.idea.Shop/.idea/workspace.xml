@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d98eeacd-f36f-4193-bc27-ce3de2266ad1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Shop/ProductCount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shop/Product.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shop/CCN.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shop/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/Shop/Shop/MarketManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shop/MarketManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shop/Market.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Shop/Product.cs" />
+        <option value="$PROJECT_DIR$/Shop/CCN.cs" />
+        <option value="$PROJECT_DIR$/Shop/ProductCount.cs" />
+        <option value="$PROJECT_DIR$/Shop/validator.cs" />
+        <option value="$PROJECT_DIR$/Shop/Program.cs" />
+        <option value="$PROJECT_DIR$/Shop/MarketManager.cs" />
+        <option value="$PROJECT_DIR$/Shop/Market.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iQc8eXO5RZNoSO8o2KOgjUnvD9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Shop" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Shop/Shop.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d98eeacd-f36f-4193-bc27-ce3de2266ad1" name="Default Changelist" comment="" />
+      <created>1601843097708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601843097708</updated>
+      <workItem from="1601843100146" duration="1265000" />
+      <workItem from="1601914036547" duration="9476000" />
+      <workItem from="1601973224652" duration="8681000" />
+      <workItem from="1602001676058" duration="684000" />
+      <workItem from="1602002386374" duration="5377000" />
+      <workItem from="1602022206917" duration="4196000" />
+      <workItem from="1602049067166" duration="8644000" />
+      <workItem from="1602157065413" duration="1968000" />
+      <workItem from="1602167798773" duration="1995000" />
+      <workItem from="1602240087633" duration="605000" />
+      <workItem from="1602248253663" duration="9887000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state x="517" y="249" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1602001862372">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="517" y="249" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1602001862372" />
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1602258304308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602258304308" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1602258304308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602258304308" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1602258304308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602258304308" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1602258304308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602258304308" />
+    <state width="1493" height="67" key="GridCell.Tab.1.bottom" timestamp="1602169982136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602169982136" />
+    <state width="1493" height="67" key="GridCell.Tab.1.center" timestamp="1602169982136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602169982136" />
+    <state width="1493" height="67" key="GridCell.Tab.1.left" timestamp="1602169982136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602169982136" />
+    <state width="1493" height="67" key="GridCell.Tab.1.right" timestamp="1602169982136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602169982136" />
+    <state width="1493" height="67" key="GridCell.Tab.2.bottom" timestamp="1602169982136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602169982136" />
+    <state width="1493" height="67" key="GridCell.Tab.2.center" timestamp="1602169982136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1602169982136" />
+    <state width="1493" height="67" key="GridCell.Tab.2.left" timestamp="1602169982136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1602169982136" />
+    <state width="1493" height="67" key="GridCell.Tab.2.right" timestamp="1602169982136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1602169982136" />
+    <state width="1493" height="67" key="GridCell.Tab.3.bottom" timestamp="1602169982137">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602169982137" />
+    <state width="1493" height="67" key="GridCell.Tab.3.center" timestamp="1602169982137">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1602169982137" />
+    <state width="1493" height="67" key="GridCell.Tab.3.left" timestamp="1602169982136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1602169982136" />
+    <state width="1493" height="67" key="GridCell.Tab.3.right" timestamp="1602169982137">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1602169982137" />
+    <state width="1493" height="67" key="GridCell.Tab.4.bottom" timestamp="1602169982137">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602169982137" />
+    <state width="1493" height="67" key="GridCell.Tab.4.center" timestamp="1602169982137">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1602169982137" />
+    <state width="1493" height="67" key="GridCell.Tab.4.left" timestamp="1602169982137">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1602169982137" />
+    <state width="1493" height="67" key="GridCell.Tab.4.right" timestamp="1602169982137">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="67" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1602169982137" />
+    <state x="277" y="55" key="SettingsEditor" timestamp="1602002843628">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602002843628" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1601924705564">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1601924705564" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1602250691267">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602250691267" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602253149678">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602253149678" />
+  </component>
+</project>
