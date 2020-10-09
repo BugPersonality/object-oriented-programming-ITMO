@@ -6,7 +6,36 @@ namespace Shop
 {
     public class MarketManager
     {
-        public Market FindCheaperMarketByProduct(Product product, List<Market> marketsMap)
+        private List<Market> marketsMap;
+
+        public Market GetMarket(string Name)
+        {
+            foreach (var tempMarket in marketsMap)
+            {
+                if (tempMarket.Name == Name)
+                {
+                    return tempMarket;
+                }
+            }
+            
+            throw new Exception("NonExistMarket");
+        }
+        public MarketManager()
+        {
+            Market myDrugs = new Market("myDrugs");
+            Market marryGane = new Market("Мэрри Джэйн"); 
+            Market funnyGardener = new Market("Веселый садовник");
+            
+            List<Market> markets = new List<Market>()
+            {
+                myDrugs,
+                marryGane,
+                funnyGardener
+            };
+            
+            this.marketsMap = markets;
+        }
+        public Market FindCheaperMarketByProduct(Product product)
         {
             double tempCost = Double.PositiveInfinity;
             Market tempMarket = marketsMap.First();
@@ -46,7 +75,7 @@ namespace Shop
             return tempMarket;
         }
 
-        public Market FindCheaperMarketByList(List<ProductCount> productsList,  List<Market> marketsMap)
+        public Market FindCheaperMarketByList(List<ProductCount> productsList)
         {
             double generalCost = Double.PositiveInfinity;
             Market tempMarket = marketsMap.First();

@@ -5,9 +5,8 @@ namespace Shop
 {
     public class Product
     {
-        private readonly string _name;
-        private readonly string _uuid;
-
+        private  string _name;
+        private  string _uuid;
         public Product(string name)
         {
             this._name = name;

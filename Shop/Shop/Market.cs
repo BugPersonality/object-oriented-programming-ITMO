@@ -91,7 +91,7 @@ namespace Shop
         public double BuyProducts(List<ProductCount> productsList)
         {
             double prise = 0;
-            
+
             foreach (var item in productsList)
             {
                 if (this._map.ContainsKey(item.Product.Uuid))
@@ -99,8 +99,6 @@ namespace Shop
                     if(this._map[item.Product.Uuid].Count != 0 && this._map[item.Product.Uuid].Count >= item.Count)
                     {
                         var tempCost = this._map[item.Product.Uuid].Cost * item.Count;
-                        
-                        //this._map[item.Product.Uuid].Count -= item.Count;
 
                         prise += tempCost;
                     }
@@ -113,6 +111,8 @@ namespace Shop
                 {
                     throw new NonExistProduct("NonExistProduct", item.Product);
                 }
+                
+                this._map[item.Product.Uuid].Count -= item.Count;
             }
 
             return prise;

@@ -8,12 +8,8 @@
             this.Count = count;
             this.Name = name;
         }
-
         public double Cost { get; set; }
-
         public int Count { get; set; }
-
         public string Name { get; set; }
     }
-
 }

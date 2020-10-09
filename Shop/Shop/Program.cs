@@ -21,19 +21,8 @@ namespace Shop
             Product сrocodile = new Product("сrocodile");
             Product hallucinogenicMushrooms = new Product("hallucinogenicMushrooms");
             Product coco = new Product("coco");
-            
-            Market myDrugs = new Market("Наши Наркотики");
-            Market marryGane = new Market("Мэрри Джэйн"); 
-            Market funnyGardener = new Market("Веселый садовник");
-            
+
             MarketManager marketManager = new MarketManager();
-            
-            List<Market> markets = new List<Market>()
-            {
-                myDrugs,
-                marryGane,
-                funnyGardener
-            };
 
             List<ProductCount> buy1 = new List<ProductCount>() 
             {
@@ -57,80 +46,80 @@ namespace Shop
                 ToProductCount(morphine, 10),
                 ToProductCount(methamphetamine, 30)
             };
+            
+            marketManager.GetMarket("Веселый садовник").AddProduct(weed, 2000, 30);
+            marketManager.GetMarket("Веселый садовник").AddProduct(hallucinogenicMushrooms, 700, 400);
+            marketManager.GetMarket("Веселый садовник").AddProduct(lsd, 500, 10);
+            marketManager.GetMarket("Веселый садовник").AddProduct(mdma, 300, 30);
+            marketManager.GetMarket("Веселый садовник").AddProduct(coco, 3000, 34);
 
-            funnyGardener.AddProduct(weed, 2000, 30);
-            funnyGardener.AddProduct(hallucinogenicMushrooms, 700, 400);
-            funnyGardener.AddProduct(lsd, 500, 10);
-            funnyGardener.AddProduct(mdma, 300, 30);
-            funnyGardener.AddProduct(coco, 3000, 34);
-        
-            myDrugs.AddProduct(mdma, 1000, 30);
-            myDrugs.AddProduct(heroin, 300, 30);
-            myDrugs.AddProduct(salt, 2000, 6);
-            myDrugs.AddProduct(morphine, 1000, 20);
-            myDrugs.AddProduct(methamphetamine, 1000, 25);
-            myDrugs.AddProduct(weed, 1000, 30);
-            myDrugs.AddProduct(hallucinogenicMushrooms, 1700, 400);
-            myDrugs.AddProduct(lsd, 400, 10);
-        
-            marryGane.AddProduct(spice, 2, 60);
-            marryGane.AddProduct(heroin, 3000, 34);
-            marryGane.AddProduct(сrocodile, 560, 0);
-            marryGane.AddProduct(coco, 10000, 7);
-            marryGane.AddProduct(methamphetamine, 100, 45);
-            marryGane.AddProduct(weed, 200, 30);
-            marryGane.AddProduct(hallucinogenicMushrooms, 1100, 400);
-            marryGane.AddProduct(lsd, 600, 10);
+            marketManager.GetMarket("myDrugs").AddProduct(mdma, 1000, 30);
+            marketManager.GetMarket("myDrugs").AddProduct(heroin, 300, 30);
+            marketManager.GetMarket("myDrugs").AddProduct(salt, 2000, 6);
+            marketManager.GetMarket("myDrugs").AddProduct(morphine, 1000, 20);
+            marketManager.GetMarket("myDrugs").AddProduct(methamphetamine, 1000, 25);
+            marketManager.GetMarket("myDrugs").AddProduct(weed, 1000, 30);
+            marketManager.GetMarket("myDrugs").AddProduct(hallucinogenicMushrooms, 1700, 400);
+            marketManager.GetMarket("myDrugs").AddProduct(lsd, 400, 10);
+
+            marketManager.GetMarket("Мэрри Джэйн").AddProduct(spice, 2, 60);
+            marketManager.GetMarket("Мэрри Джэйн").AddProduct(heroin, 3000, 34);
+            marketManager.GetMarket("Мэрри Джэйн").AddProduct(сrocodile, 560, 0);
+            marketManager.GetMarket("Мэрри Джэйн").AddProduct(coco, 10000, 7);
+            marketManager.GetMarket("Мэрри Джэйн").AddProduct(methamphetamine, 100, 45);
+            marketManager.GetMarket("Мэрри Джэйн").AddProduct(weed, 200, 30);
+            marketManager.GetMarket("Мэрри Джэйн").AddProduct(hallucinogenicMushrooms, 1100, 400);
+            marketManager.GetMarket("Мэрри Джэйн").AddProduct(lsd, 600, 10);
             
             //Проверка на market.CheckByAmount
-            myDrugs.CheckByAmount(10000);
-            marryGane.CheckByAmount(10000);
-            funnyGardener.CheckByAmount(10000);
+            marketManager.GetMarket("myDrugs").CheckByAmount(10000);
+            marketManager.GetMarket("Мэрри Джэйн").CheckByAmount(10000);
+            marketManager.GetMarket("Веселый садовник").CheckByAmount(10000);
             
             //Проверка на market.BuyProducts
             try
             {
-                double cost = myDrugs.BuyProducts(buy1);
+                double cost = marketManager.GetMarket("myDrugs").BuyProducts(buy1);
 
-                Console.WriteLine($"В магазине {myDrugs.Name} был куплен список продуктов 1 по цене {cost}");
+                Console.WriteLine($"В магазине {marketManager.GetMarket("myDrugs").Name} был куплен список продуктов 1 по цене {cost}");
             }
             catch (NonExistProduct e)
             {
-                Console.WriteLine($"В магазине {myDrugs.Name} нет {e.Product().Name}");
+                Console.WriteLine($"В магазине {marketManager.GetMarket("myDrugs").Name} нет {e.Product().Name}");
             }
             catch (ProductCountException e)
             {
-                Console.WriteLine($"В магазине {myDrugs.Name} продука {e.Product().Name} кол-во = {e.Count}");
+                Console.WriteLine($"В магазине {marketManager.GetMarket("myDrugs").Name} продука {e.Product().Name} кол-во = {e.Count}");
             }
             
             try
             {
-                double cost = marryGane.BuyProducts(buy2);
+                double cost = marketManager.GetMarket("Мэрри Джэйн").BuyProducts(buy2);
 
-                Console.WriteLine($"В магазине {marryGane.Name} был куплен список продуктов 2 по цене {cost}");
+                Console.WriteLine($"В магазине {marketManager.GetMarket("Мэрри Джэйн").Name} был куплен список продуктов 2 по цене {cost}");
             }
             catch (NonExistProduct e)
             {
-                Console.WriteLine($"В магазине {marryGane.Name} нет {e.Product().Name}");
+                Console.WriteLine($"В магазине {marketManager.GetMarket("Мэрри Джэйн").Name} нет {e.Product().Name}");
             }
             catch (ProductCountException e)
             {
-                Console.WriteLine($"В магазине {marryGane.Name} продука {e.Product().Name} кол-во = {e.Count}");
+                Console.WriteLine($"В магазине {marketManager.GetMarket("Мэрри Джэйн").Name} продука {e.Product().Name} кол-во = {e.Count}");
             }
             
             try
             {
-                double cost = funnyGardener.BuyProducts(buy3);
+                double cost = marketManager.GetMarket("Веселый садовник").BuyProducts(buy3);
 
-                Console.WriteLine($"В магазине {funnyGardener.Name} был куплен список продуктов 3 по цене {cost}");
+                Console.WriteLine($"В магазине {marketManager.GetMarket("Веселый садовник").Name} был куплен список продуктов 3 по цене {cost}");
             }
             catch (NonExistProduct e)
             {
-                Console.WriteLine($"В магазине {funnyGardener.Name} нет {e.Product().Name}");
+                Console.WriteLine($"В магазине {marketManager.GetMarket("Веселый садовник").Name} нет {e.Product().Name}");
             }
             catch (ProductCountException e)
             {
-                Console.WriteLine($"В магазине {funnyGardener.Name} продука {e.Product().Name} кол-во = {e.Count}");
+                Console.WriteLine($"В магазине {marketManager.GetMarket("Веселый садовник").Name} продука {e.Product().Name} кол-во = {e.Count}");
             }
 
             Console.WriteLine();
@@ -138,7 +127,7 @@ namespace Shop
             //Проверка на marketManager.FindCheaperMarketByList
             try
             {
-                Market temp = marketManager.FindCheaperMarketByList(buy1, markets);
+                Market temp = marketManager.FindCheaperMarketByList(buy1);
 
                 Console.WriteLine($"Дешевле всего купить список продуктов 1 в магазине {temp.Name}");
             }
@@ -153,7 +142,7 @@ namespace Shop
             
             try
             {
-                Market temp = marketManager.FindCheaperMarketByList(buy2, markets);
+                Market temp = marketManager.FindCheaperMarketByList(buy2);
 
                 Console.WriteLine($"Дешевле всего купить список продуктов 2 в магазине {temp.Name}");
             }
@@ -168,7 +157,7 @@ namespace Shop
             
             try
             {
-                Market temp = marketManager.FindCheaperMarketByList(buy3, markets);
+                Market temp = marketManager.FindCheaperMarketByList(buy3);
 
                 Console.WriteLine($"Дешевле всего купить список продуктов 3 в магазине {temp.Name}");
             }
@@ -185,7 +174,7 @@ namespace Shop
             //Проверка на marketManager.FindCheaperMarketByProduct
             try
             {
-                Market temp = marketManager.FindCheaperMarketByProduct(lsd, markets);
+                Market temp = marketManager.FindCheaperMarketByProduct(lsd);
                 
                 Console.WriteLine($"Дешевле всего купить продукт {lsd.Name} в магазине {temp.Name} по цене {temp.Map[lsd.Uuid].Cost}");
             }
@@ -200,7 +189,7 @@ namespace Shop
             
             try
             {
-                Market temp = marketManager.FindCheaperMarketByProduct(hallucinogenicMushrooms, markets);
+                Market temp = marketManager.FindCheaperMarketByProduct(hallucinogenicMushrooms);
                 
                 Console.WriteLine($"Дешевле всего купить продукт {hallucinogenicMushrooms.Name} в магазине {temp.Name} по цене {temp.Map[hallucinogenicMushrooms.Uuid].Cost}");
             }
@@ -215,7 +204,7 @@ namespace Shop
             
             try
             {
-                Market temp = marketManager.FindCheaperMarketByProduct(weed, markets);
+                Market temp = marketManager.FindCheaperMarketByProduct(weed);
                 
                 Console.WriteLine($"Дешевле всего купить продукт {weed.Name} в магазине {temp.Name} по цене {temp.Map[weed.Uuid].Cost}");
             }
