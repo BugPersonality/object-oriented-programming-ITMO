@@ -1,5 +1,9 @@
-# object-oriented-programming-ITMO
-# if (clone == 1)
-# {
-#   star_project();
-# }
+# 
+o_o
+
+1. [IniParser](/ParserForIniFile)
+
+2. [Market](/Shop)
+
+o_o
+
