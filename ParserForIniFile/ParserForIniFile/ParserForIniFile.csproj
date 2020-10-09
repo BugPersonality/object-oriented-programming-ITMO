@@ -45,6 +45,9 @@
         <Compile Include="validator.cs" />
     </ItemGroup>
     <ItemGroup>
+      <Content Include="readme1.png" />
+      <Content Include="readme2.png" />
+      <Content Include="README.md" />
       <Content Include="test.ini" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

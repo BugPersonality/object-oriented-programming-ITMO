@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/ParserForIniFile/validator.cs" />
         <option value="$PROJECT_DIR$/ParserForIniFile/Program.cs" />
         <option value="$PROJECT_DIR$/ParserForIniFile/INIParser2.0.cs" />
+        <option value="$PROJECT_DIR$/ParserForIniFile/README.md" />
       </list>
     </option>
   </component>
@@ -100,6 +101,8 @@
       <workItem from="1602265014677" duration="75000" />
       <workItem from="1602265610324" duration="76000" />
       <workItem from="1602265872975" duration="12000" />
+      <workItem from="1602274575494" duration="620000" />
+      <workItem from="1602276054999" duration="103000" />
     </task>
     <servers />
   </component>
