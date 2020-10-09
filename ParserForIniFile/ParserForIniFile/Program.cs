@@ -10,12 +10,18 @@ namespace OOPLab_1
     {
         public static void Main(string[] args)
         {
-            string path = "C:/Rider_Projects/OOPLab_1/OOPLab_1/test.ini";
+            string path = "C:/Rider_Projects/ParserForIniFile/ParserForIniFile/test.ini";
             
             Validator validator = new Validator(path);
             validator.CheckTryGetType();
             validator.CheckExceptions();
-            validator.show_map();
+            validator.Show_map();
+            
+            /*INIParser2_0 parser20 = new INIParser2_0();
+            
+            INIdata idata = parser20.Parse_file(path);
+            
+            Console.WriteLine(idata.Get<string>("ADC_DEV", "SampleRate", typeof(string)));*/
             
         }
     }

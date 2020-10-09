@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
 using static  OOPLab_1.INIdata;
 
@@ -11,7 +10,7 @@ namespace OOPLab_1
     {
         private FileStream _file;
 
-        private bool check_section(string line)
+        private bool Check_section(string line)
         {
             const string mask1 = "\\[[a-zA-Z_0-9]*\\]";
             const string mask2 = "\\[[a-zA-Z_0-9]*\\] *;.*";
@@ -19,7 +18,7 @@ namespace OOPLab_1
             return Regex.IsMatch(line, mask1) || Regex.IsMatch(line, mask2);
         }
 
-        private bool check_name(string line)
+        private bool Check_name(string line)
         {
             const string mask1 = "[a-zA-Z_0-9\\-]* *= *[a-zA-Z_0-9\\.\\-]*";
             const string mask2 = "[a-zA-Z_0-9\\-]* *= *[a-zA-Z_0-9\\.\\-]* *;.*";
@@ -27,14 +26,14 @@ namespace OOPLab_1
             return Regex.IsMatch(line, mask1) || Regex.IsMatch(line, mask2);
         }
 
-        private bool check_comm(string line)
+        private bool Check_comm(string line)
         {
             const string mask = ".* ;.*";
 
             return Regex.IsMatch(line, mask);
         }
 
-        private bool check_file_name(string path)
+        private bool Check_file_name(string path)
         {
             string mask1 = "(.+/.+)+\\.ini";
             string mask2 = ".+\\.ini";
@@ -44,7 +43,7 @@ namespace OOPLab_1
 
         private void Open_file(string path)
         {
-            if (check_file_name(path))
+            if (Check_file_name(path))
             {
                 try
                 {
@@ -52,14 +51,14 @@ namespace OOPLab_1
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e.Message);
-                    throw;
+                    throw new FileException("File open Exception");
+                    Environment.Exit(0);
                 }
             }
             else
             {
-               Console.WriteLine("File format Exception");
-               Environment.Exit(0);
+                throw new FileException("File format Exception", path);
+                Environment.Exit(0);
             }
         }
         
@@ -75,7 +74,7 @@ namespace OOPLab_1
             {
                 var line = reader.ReadLine();
 
-                if (check_comm(line))
+                if (Check_comm(line))
                 {
                     if (line != null)
                     {
@@ -85,7 +84,7 @@ namespace OOPLab_1
                     }
                 }
                 
-                if (check_section(line))
+                if (Check_section(line))
                 {
                     if (line != null)
                         tempSection = line
@@ -96,7 +95,7 @@ namespace OOPLab_1
 
                     map.Add($"{tempSection}", new Dictionary<string, string>());
                 }
-                else if (check_name(line))
+                else if (Check_name(line))
                 {
                     if (line != null)
                     {
@@ -109,8 +108,7 @@ namespace OOPLab_1
                         var value = tmp[1]
                             .Replace(" ", "")
                             .Replace("\t", "")
-                            .Replace("\n", "")
-                            .Replace(".", ",");
+                            .Replace("\n", "");
 
                         if (map.ContainsKey(tempSection))
                         {
@@ -118,12 +116,15 @@ namespace OOPLab_1
                         }
                         else
                         {
-                            Console.WriteLine($"section - [{tempSection}] doesn't exist");
-                            continue;
+                            throw new SectionNameException("Section doesn't exist", tempSection);
+                            Environment.Exit(0);
                         }
                     }
                 }
             }
+            
+            reader.Close();
+            this._file.Close();
             
             return map;
         }
@@ -134,5 +135,13 @@ namespace OOPLab_1
             
             return new INIdata(Worker());
         }
+    }
+
+    public class FileException : Exception
+    {
+        private string _path = null;
+        public string Path => _path;
+        public FileException(string message) : base(message) { }
+        public FileException(string message, string path) : base(message) { this._path = path; }
     }
 }

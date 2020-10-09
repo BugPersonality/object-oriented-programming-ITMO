@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPLab_1", "OOPLab_1\OOPLab_1.csproj", "{D9F2334D-A687-4F7B-94AB-D329CD1AEF01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserForIniFile", "ParserForIniFile\ParserForIniFile.csproj", "{D9F2334D-A687-4F7B-94AB-D329CD1AEF01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
