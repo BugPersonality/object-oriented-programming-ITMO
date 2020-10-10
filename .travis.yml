@@ -1,5 +1,13 @@
 ﻿language: csharp
 solution: Shop\Shop.sln
-mono: none
-dotnet: 4.7.2
-dist: trusty
+
+matrix:
+  include:
+    - dotnet: 2.0.0
+      mono: none
+      script:
+        - dotnet build Shop\Shop
+
+os:
+  - linux
+  - windows
