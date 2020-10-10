@@ -1,2 +1,7 @@
 ﻿language: csharp
-solution: solution-Shop.sln
+mono: none
+dotnet: 4.7.2
+dist: trusty
+script:
+  - cd Shop\Shop.Test.Core
+  - dotnet test
