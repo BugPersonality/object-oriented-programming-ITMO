@@ -47,6 +47,7 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
+      <Content Include=".travis.yml" />
       <Content Include="readme.png" />
       <Content Include="readme.md" />
     </ItemGroup>

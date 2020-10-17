@@ -4,6 +4,7 @@
     <e p="C:\Rider_Projects\Shop" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Shop" t="IncludeRecursive">
+        <e p=".travis.yml" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="CCN.cs" t="Include" />
         <e p="Market.cs" t="Include" />
