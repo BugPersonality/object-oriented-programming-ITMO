@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Rider_Projects\Shop" t="IncludeFlat">
-      <e p="packages" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Shop" t="IncludeRecursive">
-        <e p=".travis.yml" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="CCN.cs" t="Include" />
-        <e p="Market.cs" t="Include" />
-        <e p="MarketManager.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive" />
-        <e p="Product.cs" t="Include" />
-        <e p="ProductCount.cs" t="Include" />
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="AssemblyInfo.cs" t="Include" />
-        </e>
-        <e p="readme.md" t="Include" />
-        <e p="readme.png" t="Include" />
         <e p="Shop.csproj" t="IncludeRecursive" />
       </e>
       <e p="Shop.sln" t="IncludeFlat" />
     </e>
-    <e p="C:\Users\danil\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\danil\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Shop.118027000.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_Shop.2055926225.00" t="ExcludeRecursive" />
   </component>
 </project>
