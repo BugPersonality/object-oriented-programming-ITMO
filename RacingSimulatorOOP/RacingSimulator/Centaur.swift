@@ -19,4 +19,8 @@ class Centaur: LandTransport{
     func restTime() -> Double {
         return 2.0
     }
+    
+    func resetCounter() {
+        self.countOfRest = 0
+    }
 }

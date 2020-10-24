@@ -25,4 +25,8 @@ class AllTerrainBoots: LandTransport{
             return 5.0
         }
     }
+    
+    func resetCounter() {
+        self.countOfRest = 0
+    }
 }

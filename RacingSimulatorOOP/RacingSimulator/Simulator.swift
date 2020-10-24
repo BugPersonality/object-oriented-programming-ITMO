@@ -51,7 +51,7 @@ class RaceSimulator{
         }
     }
     
-    func startRaceAndFindWinner(distance: Double) -> Transport?{
+    func startRaceAndFindWinner(distance: Double) -> Transport? {
         if transportList.count > 0{
             print("\(raceName) Started")
             var curentWinner: Transport = transportList[0]

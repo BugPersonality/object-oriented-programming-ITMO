@@ -21,12 +21,16 @@ class FastCamel: LandTransport{
             countOfRest += 1
             return 5.0
         }
-        else if countOfRest == 2{
+        else if countOfRest == 1{
             countOfRest += 1
             return 6.5
         }
         else{
             return 8.0
         }
+    }
+    
+    func resetCounter() {
+        self.countOfRest = 0
     }
 }

@@ -1,7 +1,6 @@
 import Foundation
 
 class BactrianCamel: LandTransport{
-    
     var countOfRest: Int
     var name: String
     var speed: Double
@@ -24,4 +23,7 @@ class BactrianCamel: LandTransport{
         }
     }
     
+    func resetCounter() {
+        self.countOfRest = 0
+    }
 }
