@@ -36,6 +36,7 @@ class BackUp{
     }
     
     private func createResorePointByTypes (typeOfpoint: TypeOfPoint, typeOfSaving: TypeOfStorage)throws {
+        
         try updateInfoAboutFiles()
         
         switch typeOfpoint {
@@ -75,6 +76,7 @@ class BackUp{
                 //print("incremental separate")
             }
         }
+        sleep(1)
     }
     
     func createRestorePoint(typeOfpoint: TypeOfPoint, typeOfSaving: TypeOfStorage, filesNames: [String]?) throws{
@@ -88,7 +90,7 @@ class BackUp{
         }
         else{
             var tempFileNameList: [FileInfo] = []
-            var existFile: String = ""
+            //var existFile: String = ""
             
             for fileName in filesNames!{
                 
@@ -97,7 +99,7 @@ class BackUp{
                 for existFileName in filesForBeckUp{
                     if fileName == existFileName.fileName{
                         flag = false
-                        existFile = fileName
+                        //existFile = fileName
                     }
                 }
                 
@@ -109,7 +111,8 @@ class BackUp{
                     tempFileNameList.append(FileInfo(name: fileName, date: fileDate, size: Double(fileInfo[4]) ?? 0))
                 }
                 else{
-                    throw BackupError.AddingAnExistingFileError("\(existFile) file exist")
+                    continue
+                    //throw BackupError.AddingAnExistingFileError("\(existFile) file exist")
                 }
             }
             

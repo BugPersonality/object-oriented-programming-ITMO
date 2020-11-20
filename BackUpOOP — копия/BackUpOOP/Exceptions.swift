@@ -7,5 +7,6 @@ enum BackupError: Error {
     case BackupAlreadyCreated
     case NothingHasChangedInFiles
     case IncorrectArgumentsInCleaner(String)
+    case TryToCleanFullPointBeforeIncremental
 }
 

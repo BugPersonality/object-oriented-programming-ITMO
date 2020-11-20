@@ -136,32 +136,115 @@ class PointCleaner{
     
     func clearByCount(points: [RestorePoint], maxCount: Int) -> [RestorePoint]{
         var newPoints = points
+        var lastIdex: Int = points.count - maxCount
         
-        while newPoints.count > maxCount{
-            newPoints.removeLast()
+        if maxCount == 0{
+            newPoints.removeAll()
+            return newPoints
         }
-        return newPoints
+        
+        if lastIdex == 0 && newPoints[lastIdex + 1].type != .incremental{
+            newPoints.removeFirst()
+            return newPoints
+        }
+        
+        if lastIdex == 0 && newPoints[lastIdex + 1].type == .incremental{
+            return newPoints
+        }
+        
+        if lastIdex == 1 && newPoints[lastIdex].type == .incremental{
+            return newPoints
+        }
+        
+        if newPoints[lastIdex].type == .full{
+            for _ in 0..<lastIdex{
+                newPoints.removeFirst()
+            }
+            return newPoints
+        }
+        else{
+            while lastIdex > 1{
+                lastIdex -= 1
+                if newPoints[lastIdex].type == .full{
+                    break
+                }
+            }
+            if newPoints[lastIdex].type == .incremental{ // fiiiiiiiii...
+                return newPoints
+            }
+            else{
+                for _ in 0..<lastIdex{
+                    newPoints.removeFirst()
+                }
+                return newPoints
+            }
+        }
+//        var newPoints = points
+//
+//        while newPoints.count > maxCount{
+//            newPoints.removeLast()
+//        }
+//        return newPoints
     }
     
     func clearBySize(points: [RestorePoint], maxSize: Double) -> [RestorePoint]{
         var newPoints = points
-        var pointsSize: Double = 0.0
+        var tempSize = maxSize
+        var lastIdex: Int = newPoints.count - 1
         
-        for point in points{
-            pointsSize += point.size
-        }
-        
-        for i in (0..<newPoints.count).reversed(){
-            if (pointsSize > maxSize){
-                pointsSize -= newPoints[i].size
-                newPoints.removeLast()
+        while tempSize > 0 {
+            tempSize -= newPoints[lastIdex].size
+            if tempSize < 0{
+                lastIdex += 1
+                break
             }
             else{
-                break
+                lastIdex -= 1
+            }
+        }
+        
+        if newPoints[lastIdex].type != .incremental{
+            for _ in 0..<lastIdex{
+                newPoints.removeFirst()
+            }
+        }
+        else{
+            while lastIdex > 1{
+                lastIdex -= 1
+                if newPoints[lastIdex].type == .full{
+                    break
+                }
+            }
+            if newPoints[lastIdex].type == .incremental{ // fiiiiiiiii...
+                return newPoints
+            }
+            else{
+                for _ in 0..<lastIdex{
+                    newPoints.removeFirst()
+                }
+                return newPoints
             }
         }
         
         return newPoints
+//        var newPoints = points
+//        var pointsSize: Double = 0.0
+//
+//        for point in points{
+//            pointsSize += point.size
+//        }
+//
+//        for i in (0..<newPoints.count).reversed(){
+//            if (pointsSize > maxSize){
+//                pointsSize -= newPoints[i].size
+//                newPoints.removeLast()
+//            }
+//            else{
+//                break
+//            }
+//        }
+//
+//        return newPoints
     }
     
     func clearByDate(points: [RestorePoint], maxDate: String) -> [RestorePoint]{
