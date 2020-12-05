@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2442AAB4257957F60031E5BD /* DebitAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442AAB3257957F60031E5BD /* DebitAccount.swift */; };
+		2442AAB7257958220031E5BD /* DepositAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442AAB6257958220031E5BD /* DepositAccount.swift */; };
+		2442AABA257958500031E5BD /* CreditAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442AAB9257958500031E5BD /* CreditAccount.swift */; };
+		2442AABD25796E100031E5BD /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442AABC25796E100031E5BD /* Command.swift */; };
+		2442AAC625797F280031E5BD /* IAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442AAC525797F280031E5BD /* IAccount.swift */; };
+		2442AACB257A51810031E5BD /* IBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442AACA257A51810031E5BD /* IBank.swift */; };
+		2442AAD3257A66890031E5BD /* SecondBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442AAD2257A66890031E5BD /* SecondBank.swift */; };
+		2442AAD8257A67780031E5BD /* FirstBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442AAD7257A67780031E5BD /* FirstBank.swift */; };
+		2476F952256FDF3300615452 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2476F951256FDF3300615452 /* main.swift */; };
+		2476F95C256FF82100615452 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2476F95B256FF82100615452 /* Client.swift */; };
+		2476F95F256FF97C00615452 /* ClientBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2476F95E256FF97C00615452 /* ClientBuilder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2476F94C256FDF3300615452 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2442AAB3257957F60031E5BD /* DebitAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitAccount.swift; sourceTree = "<group>"; };
+		2442AAB6257958220031E5BD /* DepositAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositAccount.swift; sourceTree = "<group>"; };
+		2442AAB9257958500031E5BD /* CreditAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditAccount.swift; sourceTree = "<group>"; };
+		2442AABC25796E100031E5BD /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		2442AAC525797F280031E5BD /* IAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAccount.swift; sourceTree = "<group>"; };
+		2442AACA257A51810031E5BD /* IBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBank.swift; sourceTree = "<group>"; };
+		2442AAD2257A66890031E5BD /* SecondBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondBank.swift; sourceTree = "<group>"; };
+		2442AAD7257A67780031E5BD /* FirstBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBank.swift; sourceTree = "<group>"; };
+		2476F94E256FDF3300615452 /* BankOOP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BankOOP; sourceTree = BUILT_PRODUCTS_DIR; };
+		2476F951256FDF3300615452 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2476F959256FF61500615452 /* spisok.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spisok.txt; sourceTree = "<group>"; };
+		2476F95B256FF82100615452 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		2476F95E256FF97C00615452 /* ClientBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientBuilder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2476F94B256FDF3300615452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2476F945256FDF3300615452 = {
+			isa = PBXGroup;
+			children = (
+				2476F950256FDF3300615452 /* BankOOP */,
+				2476F94F256FDF3300615452 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2476F94F256FDF3300615452 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2476F94E256FDF3300615452 /* BankOOP */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2476F950256FDF3300615452 /* BankOOP */ = {
+			isa = PBXGroup;
+			children = (
+				2476F959256FF61500615452 /* spisok.txt */,
+				2442AACA257A51810031E5BD /* IBank.swift */,
+				2442AAD7257A67780031E5BD /* FirstBank.swift */,
+				2442AAD2257A66890031E5BD /* SecondBank.swift */,
+				2476F95B256FF82100615452 /* Client.swift */,
+				2476F95E256FF97C00615452 /* ClientBuilder.swift */,
+				2442AAC525797F280031E5BD /* IAccount.swift */,
+				2442AAB3257957F60031E5BD /* DebitAccount.swift */,
+				2442AAB6257958220031E5BD /* DepositAccount.swift */,
+				2442AAB9257958500031E5BD /* CreditAccount.swift */,
+				2442AABC25796E100031E5BD /* Command.swift */,
+				2476F951256FDF3300615452 /* main.swift */,
+			);
+			path = BankOOP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2476F94D256FDF3300615452 /* BankOOP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2476F955256FDF3300615452 /* Build configuration list for PBXNativeTarget "BankOOP" */;
+			buildPhases = (
+				2476F94A256FDF3300615452 /* Sources */,
+				2476F94B256FDF3300615452 /* Frameworks */,
+				2476F94C256FDF3300615452 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankOOP;
+			productName = BankOOP;
+			productReference = 2476F94E256FDF3300615452 /* BankOOP */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2476F946256FDF3300615452 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					2476F94D256FDF3300615452 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 2476F949256FDF3300615452 /* Build configuration list for PBXProject "BankOOP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2476F945256FDF3300615452;
+			productRefGroup = 2476F94F256FDF3300615452 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2476F94D256FDF3300615452 /* BankOOP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2476F94A256FDF3300615452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2442AAB4257957F60031E5BD /* DebitAccount.swift in Sources */,
+				2442AACB257A51810031E5BD /* IBank.swift in Sources */,
+				2476F95C256FF82100615452 /* Client.swift in Sources */,
+				2442AAD8257A67780031E5BD /* FirstBank.swift in Sources */,
+				2442AAB7257958220031E5BD /* DepositAccount.swift in Sources */,
+				2476F95F256FF97C00615452 /* ClientBuilder.swift in Sources */,
+				2442AABA257958500031E5BD /* CreditAccount.swift in Sources */,
+				2476F952256FDF3300615452 /* main.swift in Sources */,
+				2442AABD25796E100031E5BD /* Command.swift in Sources */,
+				2442AAD3257A66890031E5BD /* SecondBank.swift in Sources */,
+				2442AAC625797F280031E5BD /* IAccount.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2476F953256FDF3300615452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2476F954256FDF3300615452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2476F956256FDF3300615452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G98982NGJ8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2476F957256FDF3300615452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G98982NGJ8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2476F949256FDF3300615452 /* Build configuration list for PBXProject "BankOOP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2476F953256FDF3300615452 /* Debug */,
+				2476F954256FDF3300615452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2476F955256FDF3300615452 /* Build configuration list for PBXNativeTarget "BankOOP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2476F956256FDF3300615452 /* Debug */,
+				2476F957256FDF3300615452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2476F946256FDF3300615452 /* Project object */;
+}

@@ -1,0 +1,11 @@
+1 Миах Такбир 12-35-1 Vasilievsky.island-13
+2 Неледов Илья 12-35-2 Sadovaya.street-41
+3 Горбунов Алексей 12-35-3 Ligovskiy.prospekt-35
+4 Руй Жанна 12-35-4 Admiralty.prospect-34  
+5 Иванов Анатолий 12-35-5 Liteyny.prospect-21
+6 Дубов Данил 12-35-6 Optikov.street-41
+7 Апальков Даниил 12-35-7 Admiralty.prospect-1
+8 Телегина Екатерина nil nil
+9 Сорокина Ирина nil nil
+10 Трифонов Артем 12-35-10 Liteyny.prospect-94
+11 Мизюк Евгений 12-35-11 Sadovaya.street-1023
