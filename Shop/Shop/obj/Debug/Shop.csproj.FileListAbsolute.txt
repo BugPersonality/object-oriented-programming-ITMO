@@ -1,6 +1,0 @@
-C:\Rider_Projects\Shop\Shop\bin\Debug\Shop.exe
-C:\Rider_Projects\Shop\Shop\bin\Debug\Shop.pdb
-C:\Rider_Projects\Shop\Shop\obj\Debug\Shop.csprojAssemblyReference.cache
-C:\Rider_Projects\Shop\Shop\obj\Debug\Shop.csproj.CoreCompileInputs.cache
-C:\Rider_Projects\Shop\Shop\obj\Debug\Shop.exe
-C:\Rider_Projects\Shop\Shop\obj\Debug\Shop.pdb

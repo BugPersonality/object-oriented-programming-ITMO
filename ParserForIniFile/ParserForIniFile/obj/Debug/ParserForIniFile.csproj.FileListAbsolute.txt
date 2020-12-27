@@ -1,6 +1,0 @@
-C:\Rider_Projects\ParserForIniFile\ParserForIniFile\bin\Debug\ParserForIniFile.exe
-C:\Rider_Projects\ParserForIniFile\ParserForIniFile\bin\Debug\ParserForIniFile.pdb
-C:\Rider_Projects\ParserForIniFile\ParserForIniFile\obj\Debug\ParserForIniFile.csprojAssemblyReference.cache
-C:\Rider_Projects\ParserForIniFile\ParserForIniFile\obj\Debug\ParserForIniFile.csproj.CoreCompileInputs.cache
-C:\Rider_Projects\ParserForIniFile\ParserForIniFile\obj\Debug\ParserForIniFile.exe
-C:\Rider_Projects\ParserForIniFile\ParserForIniFile\obj\Debug\ParserForIniFile.pdb
