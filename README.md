@@ -2,11 +2,11 @@ o_o
 
 1. [IniParser](/ParserForIniFile/ParserForIniFile)
 
-2. [Market](/Shop/Shop)
+2. [Shop](/Shop/Shop)
 
 3. [RacingSimulator](/RacingSimulator/RacingSimulator)
 
-4. [Backup](/BackUp/BackUp)
+4. [Backup](https://github.com/BugPersonality/object-oriented-programming-ITMO/tree/master/Backup/Backup)
 
 5. [Bank](/Bank/Bank)
 
